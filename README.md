@@ -19,3 +19,6 @@ Este ultimo codigo tiene un problema y es que la dependencia com.lukespragg:jalo
 
 ```compile 'jalopy:jalopy:1.5b5'```
 
+Los comandos a ejecutar para usar esta libreria son los siguientes:
+* gradlew
+* gradlew install
