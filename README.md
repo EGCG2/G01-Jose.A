@@ -14,5 +14,8 @@ repositories {
 dependencies {
     compile 'com.lukespragg:jalopy-maven-plugin:1.1.0-SNAPSHOT'
 }
-
+```
 Este ultimo codigo tiene un problema y es que la dependencia com.lukespragg:jalopy-maven-plugin:1.1.0-SNAPSHOT no existe. Dicha url ha sido modificada por el desarrollador y no esta actualizada en su documentacion. La url tiene que ser sustituida por esta: 
+
+```compile 'jalopy:jalopy:1.5b5'```
+
