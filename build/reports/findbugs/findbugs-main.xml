@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.1" sequence="0" timestamp="1481273671796" analysisTimestamp="1481273671811" release="">
+  <Project projectName="">
+    <Jar>C:\Users\Jose Antonio\Desktop\gradle03\build\classes\main\Library.class</Jar>
+    <AuxClasspathEntry>C:\Users\Jose Antonio\.gradle\caches\modules-2\files-2.1\org.slf4j\slf4j-api\1.7.21\139535a69a4239db087de9bab0bee568bf8e0b70\slf4j-api-1.7.21.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Jose Antonio\.gradle\caches\modules-2\files-2.1\jalopy\jalopy\1.5b5\625569c0881e7cd003d1bd381ac5c343ec5b0528\jalopy-1.5b5.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Jose Antonio\.gradle\caches\modules-2\files-2.1\com.google.code.findbugs\annotations\3.0.1\fc019a2216218990d64dfe756e7aa20f0069dea2\annotations-3.0.1.jar</AuxClasspathEntry>
+    <SrcDir>C:\Users\Jose Antonio\Desktop\gradle03\src\main\java\Library.java</SrcDir>
+    <Plugin id="jp.co.worksap.oss.findbugs" enabled="true"/>
+    <Plugin id="com.mebigfatguy.fbcontrib" enabled="true"/>
+  </Project>
+  <BugInstance type="FORBIDDEN_SYSTEM" priority="2" rank="2" abbrev="SYS" category="BAD_PRACTICE" instanceHash="bfdad87a04f90e749506124a1fc8b17f" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>code for publish can not use System.out
+    </ShortMessage>
+    <LongMessage>we can not use System.out and System.err, please use log to
+      output information
+    </LongMessage>
+    <Class classname="Library" primary="true">
+      <SourceLine classname="Library" start="7" end="11" sourcefile="Library.java" sourcepath="Library.java">
+        <Message>At Library.java:[lines 7-11]</Message>
+      </SourceLine>
+      <Message>In class Library</Message>
+    </Class>
+    <Method classname="Library" name="someLibraryMethod" signature="()Z" isStatic="false" primary="true">
+      <SourceLine classname="Library" start="9" end="11" startBytecode="0" endBytecode="104" sourcefile="Library.java" sourcepath="Library.java"/>
+      <Message>In method Library.someLibraryMethod()</Message>
+    </Method>
+    <SourceLine classname="Library" primary="true" start="10" end="10" startBytecode="11" endBytecode="11" sourcefile="Library.java" sourcepath="Library.java">
+      <Message>At Library.java:[line 10]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="BAD_PRACTICE">
+    <Description>Bad practice</Description>
+  </BugCategory>
+  <BugPattern type="FORBIDDEN_SYSTEM" abbrev="SYS" category="BAD_PRACTICE">
+    <ShortDescription>code for publish can not use System.out
+    </ShortDescription>
+    <Details><![CDATA[
+  
+    <p>System.out and System.err are forbidden, please use log</p>
+  
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="SYS">
+    <Description>SYS</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Fri, 9 Dec 2016 09:54:31 +0100" total_classes="1" referenced_classes="11" total_bugs="1" total_size="7" num_packages="1" java_version="1.7.0_79" vm_version="24.79-b02" cpu_seconds="5.12" clock_seconds="1.68" peak_mbytes="103.94" alloc_mbytes="1803.00" gc_seconds="0.02" priority_2="1">
+    <FileStats path="Library.java" bugCount="1" size="7" bugHash="0c0dcff1eabe486d38fc6712ca3ba625"/>
+    <PackageStats package="" total_bugs="1" total_types="1" total_size="7" priority_2="1">
+      <ClassStats class="Library" sourceFile="Library.java" interface="false" size="7" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="311" invocations="305" avgMicrosecondsPerInvocation="1022" maxMicrosecondsPerInvocation="15377" standardDeviationMircosecondsPerInvocation="1836"/>
+      <ClassProfile name="com.mebigfatguy.fbcontrib.collect.CollectStatistics" totalMilliseconds="92" invocations="11" avgMicrosecondsPerInvocation="8380" maxMicrosecondsPerInvocation="29439" standardDeviationMircosecondsPerInvocation="9066"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="87" invocations="11" avgMicrosecondsPerInvocation="7976" maxMicrosecondsPerInvocation="36301" standardDeviationMircosecondsPerInvocation="10164"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="82" invocations="11" avgMicrosecondsPerInvocation="7514" maxMicrosecondsPerInvocation="37270" standardDeviationMircosecondsPerInvocation="10458"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="80" invocations="89" avgMicrosecondsPerInvocation="903" maxMicrosecondsPerInvocation="13064" standardDeviationMircosecondsPerInvocation="1797"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="62" invocations="34" avgMicrosecondsPerInvocation="1832" maxMicrosecondsPerInvocation="5384" standardDeviationMircosecondsPerInvocation="1421"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="40" invocations="273" avgMicrosecondsPerInvocation="148" maxMicrosecondsPerInvocation="1282" standardDeviationMircosecondsPerInvocation="233"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="36" invocations="2" avgMicrosecondsPerInvocation="18419" maxMicrosecondsPerInvocation="36108" standardDeviationMircosecondsPerInvocation="17689"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="29" invocations="11" avgMicrosecondsPerInvocation="2647" maxMicrosecondsPerInvocation="11278" standardDeviationMircosecondsPerInvocation="3504"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="28" invocations="11" avgMicrosecondsPerInvocation="2628" maxMicrosecondsPerInvocation="7301" standardDeviationMircosecondsPerInvocation="2666"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="25" invocations="11" avgMicrosecondsPerInvocation="2314" maxMicrosecondsPerInvocation="8001" standardDeviationMircosecondsPerInvocation="2558"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

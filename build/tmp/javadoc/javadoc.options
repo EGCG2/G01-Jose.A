@@ -1,0 +1,6 @@
+-classpath 'C:\\Users\\Jose Antonio\\Desktop\\gradle03\\build\\classes\\main;C:\\Users\\Jose Antonio\\Desktop\\gradle03\\build\\resources\\main;C:\\Users\\Jose Antonio\\.gradle\\caches\\modules-2\\files-2.1\\org.slf4j\\slf4j-api\\1.7.21\\139535a69a4239db087de9bab0bee568bf8e0b70\\slf4j-api-1.7.21.jar;C:\\Users\\Jose Antonio\\.gradle\\caches\\modules-2\\files-2.1\\jalopy\\jalopy\\1.5b5\\625569c0881e7cd003d1bd381ac5c343ec5b0528\\jalopy-1.5b5.jar;C:\\Users\\Jose Antonio\\.gradle\\caches\\modules-2\\files-2.1\\com.google.code.findbugs\\annotations\\3.0.1\\fc019a2216218990d64dfe756e7aa20f0069dea2\\annotations-3.0.1.jar'
+-d 'C:\\Users\\Jose Antonio\\Desktop\\gradle03\\build\\docs\\javadoc'
+-doctitle 'gradle03 API'
+-quiet 
+-windowtitle 'gradle03 API'
+'C:\\Users\\Jose Antonio\\Desktop\\gradle03\\src\\main\\java\\Library.java'
