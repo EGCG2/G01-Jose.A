@@ -6,3 +6,6 @@ branches:
     - master
 script:
   - ./gradlew check
+  
+before_install:
+ - chmod +x gradlew
