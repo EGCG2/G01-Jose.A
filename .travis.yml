@@ -9,3 +9,6 @@ script:
   
 before_install:
  - chmod +x gradlew
+
+notifications:
+    - email: false  
